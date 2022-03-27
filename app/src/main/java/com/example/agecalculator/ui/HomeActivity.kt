@@ -18,7 +18,6 @@ class HomeActivity : AppBaseActivity() {
 
         Log.d(TAG, "onCreate: HomeActivity.")
 
-
     }
 
 

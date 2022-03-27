@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorBackground">#F8F8F8</color>
+    <color name="blue_background">#5B9DFF</color>
+    <color name="yellow_background">#FFD54F</color>
+    <color name="pink_background">#EC407A</color>
+    <color name="sky_background">#1DE9B6</color>
+    <color name="bottom_background">#D3F6D5</color>
 </resources>

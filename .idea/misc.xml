@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Kotlin/Android Kotlin/AgeCalculator_Production/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Kotlin/Android Kotlin/AgeCalculator_Production/app/src/main/res/drawable/bottom_background.xml" value="0.1" />
+        <entry key="..\:/Kotlin/Android Kotlin/AgeCalculator_Production/app/src/main/res/drawable/pink_background.xml" value="0.1" />
+        <entry key="..\:/Kotlin/Android Kotlin/AgeCalculator_Production/app/src/main/res/drawable/sky_background.xml" value="0.1" />
+        <entry key="..\:/Kotlin/Android Kotlin/AgeCalculator_Production/app/src/main/res/drawable/top_background.xml" value="0.1" />
+        <entry key="..\:/Kotlin/Android Kotlin/AgeCalculator_Production/app/src/main/res/drawable/yellow_background.xml" value="0.1" />
         <entry key="..\:/Kotlin/Android Kotlin/AgeCalculator_Production/app/src/main/res/layout/activity_home.xml" value="0.12" />
         <entry key="..\:/Kotlin/Android Kotlin/AgeCalculator_Production/app/src/main/res/layout/layout_datepicker.xml" value="0.18" />
         <entry key="..\:/Kotlin/Android Kotlin/AgeCalculator_Production/app/src/main/res/layout/layout_toolbar.xml" value="0.1" />
