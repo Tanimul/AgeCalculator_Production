@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".ui.HomeActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_constraint01"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -14,7 +16,151 @@
             android:id="@+id/toolbar_layout"
             layout="@layout/layout_toolbar" />
 
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_action_button"
+            android:padding="10dp"
+            android:src="@drawable/ic_share"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black"
+            tools:ignore="ContentDescription" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_constraint02"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/blue_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_layout">
+
+            <TextView
+                android:id="@+id/tv_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/calculate_age"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/layout_linear01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_heading">
+
+                <TextView
+                    android:id="@+id/tv_dateOfBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:gravity="center"
+                    android:text="@string/date_of_birth"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/bt_dateOfBirth"
+                    style="?android:spinnerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Date"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_linear02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_linear01">
+
+                <TextView
+                    android:id="@+id/tv_toDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:gravity="center"
+                    android:text="@string/today"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/bt_toDay"
+                    style="?android:spinnerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Date"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_constraint03"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/green_background"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_constraint02">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_constraint04"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/pink_background"
+                app:layout_constraintEnd_toStartOf="@id/layout_constraint05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_constraint05"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/sky_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/layout_constraint04"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_constraint06"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="4dp"
+                android:layout_marginTop="-25dp"
+                android:background="@drawable/yellow_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_constraint05"
+                app:layout_constraintVertical_bias="0.2">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
