@@ -1,4 +1,4 @@
-package com.example.agecalculator
+package com.tanimul.agecalculator
 
 import android.util.Log
 import android.view.MenuItem

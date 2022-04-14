@@ -1,4 +1,4 @@
-package com.example.agecalculator
+package com.tanimul.agecalculator
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

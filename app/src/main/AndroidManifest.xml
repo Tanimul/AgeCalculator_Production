@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.agecalculator">
+    package="com.tanimul.agecalculator">
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
@@ -14,10 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AgeCalculator">
         <activity
-            android:name=".ui.HomeActivity"
+            android:name="com.tanimul.agecalculator.ui.HomeActivity"
             android:exported="true"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Splash"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

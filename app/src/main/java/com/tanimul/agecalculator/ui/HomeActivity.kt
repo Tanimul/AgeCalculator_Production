@@ -1,4 +1,4 @@
-package com.example.agecalculator.ui
+package com.tanimul.agecalculator.ui
 
 import android.Manifest
 import android.app.AlertDialog
@@ -15,9 +15,9 @@ import android.view.View
 import android.widget.DatePicker
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
-import com.example.agecalculator.AppBaseActivity
-import com.example.agecalculator.R
-import com.example.agecalculator.databinding.ActivityHomeBinding
+import com.tanimul.agecalculator.AppBaseActivity
+import com.tanimul.agecalculator.R
+import com.tanimul.agecalculator.databinding.ActivityHomeBinding
 import org.joda.time.LocalDate
 import org.joda.time.Period
 import org.joda.time.PeriodType
@@ -37,12 +37,13 @@ class HomeActivity : AppBaseActivity() {
     private val yearFormat = SimpleDateFormat("yyyy", Locale.getDefault())
     private val dayFormat = SimpleDateFormat("dd", Locale.getDefault())
     private val monthFormat = SimpleDateFormat("M", Locale.getDefault())
-    private val  dayOfWeek = SimpleDateFormat("EEEE")
+    private val dayOfWeek = SimpleDateFormat("EEEE", Locale.getDefault())
     private lateinit var toDaysCalendar: Calendar
     private lateinit var birthDateCalender: Calendar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_AgeCalculator)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

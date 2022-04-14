@@ -1,4 +1,4 @@
-package com.example.agecalculator
+package com.tanimul.agecalculator
 
 import org.junit.Test
 
