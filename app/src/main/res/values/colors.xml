@@ -13,4 +13,9 @@
     <color name="pink_background">#EC407A</color>
     <color name="sky_background">#1DE9B6</color>
     <color name="bottom_background">#D3F6D5</color>
+    <color name="light_salmon">#FFA07A</color>
+    <color name="sun_yellow">#FFE87C</color>
+    <color name="aquamarine">#86FBC7</color>
+    <color name="light_orange">#FED8B1</color>
+    <color name="primary_text_color">#D81818</color>
 </resources>

@@ -17,4 +17,6 @@
     <string name="total_minutes">Total Minutes</string>
     <string name="total_seconds">Total Seconds</string>
     <string name="summary">Summary</string>
+    <string name="date">Date</string>
+    <string name="_0">0</string>
 </resources>
